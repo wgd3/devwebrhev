@@ -10,7 +10,7 @@ $(document).ready(function() {
 		
 		var newUUID = $(this).find("p").text()
 		console.log("Modifying href to: "+newUUID);
-		var newURL = "http://localhost:5000/host/"+newUUID;
+		var newURL = "/host/"+newUUID;
 		$(this).find("a").attr('href',newURL);
 		
 	});
