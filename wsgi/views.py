@@ -17,7 +17,8 @@ During server init, here is what should happen:
 # Load the database and it's hosts
 #dbFile = "/home/wallace/cases/01002915/sosreport-LogCollector-20131223183303/database/sos_pgdump.tar"
 #dbFile = "/home/wallace/cases/00945926/LogCollector/database/sos_pgdump.tar"
-dbFile = "/data/sos_pgdump.tar"
+dbPath = os.environ.get('OPENSHIFT_DATA_DIR')
+dbFile = dbPath+"/data/sos_pgdump.tar"
 database = Database(dbFile)
 
 # get other lists of information for reference
