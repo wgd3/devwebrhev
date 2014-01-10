@@ -17,7 +17,7 @@ During server init, here is what should happen:
 # Load the database and it's hosts
 #dbFile = "/home/wallace/cases/01002915/sosreport-LogCollector-20131223183303/database/sos_pgdump.tar"
 #dbFile = "/home/wallace/cases/00945926/LogCollector/database/sos_pgdump.tar"
-dbFile = "/home/wallace/cases/00986768/sosreport-LogCollector-comp-wguo-20131120115048-5fd4/database/sos_pgdump.tar"
+dbFile = "data/sos_pgdump.tar"
 database = Database(dbFile)
 
 # get other lists of information for reference
