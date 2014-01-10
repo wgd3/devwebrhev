@@ -1,7 +1,9 @@
-from flask import render_template, flash, request, redirect
-from rhevlcbridge import *
+from flask import Flask, render_template, flash, request, redirect
+from libs.rhevlcbridge import *
 import json
 import os,sys
+
+app = Flask(__name__)
 
 '''
 During server init, here is what should happen:
@@ -158,4 +160,7 @@ def get_host_details(*args):
 		return displayHosts
 	else: 
 		print "Something went really wrong when trying to call get_host_details"
-		return Nones
+		return None
+
+if __name__ == "__main__":
+    app.run()
