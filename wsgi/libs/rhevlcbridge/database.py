@@ -4,11 +4,11 @@ Created on Dec 27, 2013
 @author: wallace
 '''
 import tarfile, os
-from rhevlcbridge.host import Host # Surely there is a better way to do this
-from rhevlcbridge.storagedomain import StorageDomain
-from rhevlcbridge.datacenter import DataCenter
-from rhevlcbridge.cluster import Cluster
-from rhevlcbridge.auditmesssage import AuditMessage
+from host import Host # Surely there is a better way to do this
+from storagedomain import StorageDomain
+from datacenter import DataCenter
+from cluster import Cluster
+from auditmesssage import AuditMessage
 
 
 class Database():
