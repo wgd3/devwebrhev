@@ -19,4 +19,4 @@ except IOError:
     pass
 
 from run import app as application
-
+from webrhev import rhevlcbridge
